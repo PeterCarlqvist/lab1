@@ -1,5 +1,15 @@
 /* Remove the default list styling */
 
+/* Global Box-Sizing Rule */
+* {
+  box-sizing: border-box; /* Makes sure padding and border are included in the width and height */
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
 
 nav {
   margin-top: 20px; /* Moves the entire nav down by 20px */
@@ -33,4 +43,38 @@ nav ul li a {
 nav ul li a:hover {
   color: white; /* Changes text color to white on hover */
   background-color: black; /* Changes background to black on hover */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Intro section layout using flexbox */
+.intro-section {
+  display: flex; /* Creates a row layout */
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Centers the items horizontally */
+  margin: 20px; /* Adds some space around the section */
+  padding: 20px;
+  border: 1px solid #ddd; /* Optional border around the intro section */
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Image styles */
+.intro-section img {
+  margin-right: 20px; /* Adds space between the image and the text */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Intro text styles */
+.intro-text {
+  max-width: 600px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  line-height: 1.5;
 }
