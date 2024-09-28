@@ -89,3 +89,32 @@ h1 {
   background-color: #f9f9f9; /* Light background color for contrast */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
 }
+/* Style for Labels */
+.contact-form label {
+  margin-top: 15px;
+  font-weight: bold; /* Makes labels bold */
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column; /* Arranges the form elements in a column */
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  background-color: black; /* Adds a background color to the button */
+  color: white; /* Changes the text color to white */
+  padding: 20px 20px; /* Adds padding to the button */
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Adds rounded corners to the button */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
