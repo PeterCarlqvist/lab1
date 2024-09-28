@@ -6,3 +6,7 @@ to reality requires patience and a lot of CSS.
 I created the webpage stepwise. First adding the required HTML
 elements and then styling. For the styling I used web resources and
 trial and error.
+
+As the website develops it becomes easier as I can reuse code to make the website look cohesive.
+Each new page is easier to develop.
+
