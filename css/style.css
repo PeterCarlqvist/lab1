@@ -54,8 +54,9 @@ h1 {
 .intro-section {
   display: flex; /* Creates a row layout */
   align-items: center; /* Aligns items vertically in the center */
+  max-width: 50%; /* Limit width to 50% of the page */
   justify-content: center; /* Centers the items horizontally */
-  margin: 20px; /* Adds some space around the section */
+  margin: 20px auto; /* Adds some space around the section */
   padding: 20px;
   border: 1px solid #ddd; /* Optional border around the intro section */
   border-radius: 8px;
@@ -63,16 +64,17 @@ h1 {
 }
 .project {
   display: flex;
-  flex-direction: row;
-  justify-content: center; /* Centers the items horizontally */
-  align-items: center;
-  margin: 20px; /* Adds some space around the section */
+  flex-direction: row; /* Aligns image and text in the same row */
+  justify-content: flex-start;
+  align-items: center; /* center image with text */
+  max-width: 50%; /* Limit width to 50% of the page */
+  margin: 20px auto; /* Center the project description on the page */
   padding: 20px;
-  border: 1px solid #ddd; /* Optional border around the intro section */
+  border: 1px solid #ddd; /* Adds a border around each project section */
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a polished look */
 }
-
 /* Image styles */
 .intro-section img {
   margin-right: 20px; /* Adds space between the image and the text */
@@ -85,7 +87,7 @@ h1 {
   border: 1px solid #ccc;
 }
 .project img, .intro-section img {
-  width: 150px;
+  width: 200px;
   height: auto;
 }
 
@@ -98,20 +100,23 @@ h1 {
   font-size: 18px;
   line-height: 1.5;
 }
-
-.project-text {
-  max-width: 600px;
+/* Project text layout (with heading and paragraph stacked) */
+.project-info {
+  display: flex;
+  flex-direction: column; /* Stacks heading and paragraph vertically */
+  max-width: 800px;
 }
 
-.project-text {
-  margin-bottom: 10px;
+/* Text styling */
+.project-info h2 {
+  margin-bottom: 10px; /* Adds space between heading and text */
 }
 
-
-.project-text p {
+.project-info p {
   font-size: 18px;
   line-height: 1.5;
 }
+
 
 /* Contact Form Container */
 .contact-form {
