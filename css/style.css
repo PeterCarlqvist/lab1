@@ -10,7 +10,16 @@ body {
   padding: 0;
   line-height: 1.6;
 }
+/* Page-specific border styles */
+/* Wrapper for content */
+.container {
+  max-width: 1600px; /* Maximum width for the content */
 
+  margin: 50px auto; /* Centers the container horizontally */
+  background-color: white; /* Content area remains white */
+  padding: 50px; /* Adds padding inside the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+}
 nav {
   margin-top: 20px; /* Moves the entire nav down by 20px */
 }
@@ -45,8 +54,15 @@ nav ul li a:hover {
   background-color: black; /* Changes background to black on hover */
 }
 
+/* Active link effect - same as hover */
+nav ul li a.active {
+  color: white; /* Changes text color to white */
+  background-color: black; /* Freezes the background color to black */
+}
+
+
 h1 {
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
 }
 
@@ -168,3 +184,38 @@ h1 {
     margin-bottom: 15px; /* Adds spacing when stacked vertically */
   }
 }
+/* Hide checkbox (used for toggling menu) */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+/* Default navigation styles */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
