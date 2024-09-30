@@ -13,9 +13,9 @@ body {
 /* Page-specific border styles */
 /* Wrapper for content */
 .container {
-  max-width: 1600px; /* Maximum width for the content */
+  max-width: 90%; /* Maximum width for the content */
 
-  margin: 50px auto; /* Centers the container horizontally */
+  margin: 20px auto; /* Centers the container horizontally */
   background-color: white; /* Content area remains white */
   padding: 50px; /* Adds padding inside the content */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
@@ -175,47 +175,51 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 100%; /* Use full screen width */
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack menu items */
+  }
+
+  nav ul li {
+    margin-bottom: 5px; /* Adds space between each list item */
+  }
+  nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: black; /* Sets text color */
+    font-family: Arial, sans-serif; /* Set font */
+    font-size: 14px; /* Adjust font size */
+    padding: 5px; /* Adds padding around the links */
+    border: 1px solid black; /* Adds a border around the links */
+    border-radius: 5px; /* Adds rounded corners to the links */
+  }
+
+
   .intro-section, .project {
-    flex-direction: column; /* Stacks the content vertically on smaller screens */
-    align-items: flex-start; /* Aligns items at the start */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+    padding: 10px;
   }
 
-  .project img, .intro-section img {
-    margin-bottom: 15px; /* Adds spacing when stacked vertically */
+  img {
+    max-width: 100%;
+    height: auto; /* Ensure images are responsive */
+  }
+
+  h1 {
+    font-size: 24px; /* Reduce font size for headings */
+  }
+
+  p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+
+  button {
+    width: 100%; /* Full-width buttons for easier taps */
+    font-size: 18px;
+    padding: 15px 20px;
   }
 }
-/* Hide checkbox (used for toggling menu) */
-#menu-toggle {
-  display: none;
-}
-
-/* Hamburger menu styles */
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  margin: 20px;
-}
-
-/* Default navigation styles */
-.nav-links {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
