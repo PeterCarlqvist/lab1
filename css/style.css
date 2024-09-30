@@ -193,6 +193,20 @@ footer a {
   text-decoration: none;
 }
 
+.menu-button {
+  display: none; /* Initially hidden */
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+
+
 @media (max-width: 768px) {
   .container {
     max-width: 100%; /* Use full screen width */
@@ -241,4 +255,34 @@ footer a {
     font-size: 18px;
     padding: 15px 20px;
   }
+  .menu-button {
+    display: block; /* Display the menu button */
+  }
+
+  /* Hide the navigation links by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9; /* Light background */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 5px;
+  }
+
+  /* Show the menu when pressing the button */
+  .menu-button:hover + ul,
+  nav ul:hover {
+    display: flex;
+  }
+
+  /* Adjust navigation list items for vertical layout */
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    padding: 15px; /* Increase padding for touch screens */
+    text-align: center;
+    display: block;
+  }
 }
+
