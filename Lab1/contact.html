@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - My Personal Webpage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Contact page for Lab 1">
+</head>
+
+<body>
+<div class="container">
+<nav>
+  <div class="menu-button">
+    <span>&#9776; Menu</span> <!-- Hamburger icon -->
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>Contact Me</h1>
+
+<div class="contact-form">
+  <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+</div>
+<footer>
+  <div class="footer-container">
+    <table class="footer-table">
+      <tr>
+
+        <td>
+          <p>
+          <ul class="nav-links-footer">
+            <li><a href="#about" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          </p>
+          <p><a href="mailto:peter.carlqvist@gmail.com">Send me an email</a></a></p>
+          <p>&copy; 2024 Peter Carlqvist. All rights reserved   Privacy Policy   Terms of use</p>
+        </td>
+
+        <td>
+
+          <p>Social:</p>
+          <p><a href="https://www.linkedin.com/in/petercarlqvist" target="_blank">Connect with me on LinkedIn</a></p>
+
+
+
+
+        </td>
+
+      </tr>
+    </table>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>

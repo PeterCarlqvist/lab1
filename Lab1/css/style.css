@@ -5,7 +5,7 @@
   box-sizing: border-box; /* Makes sure padding and border are included in the width and height */
 }
 body {
-  font-family: "Courier New", sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
